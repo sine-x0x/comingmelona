@@ -1,0 +1,1887 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts-gl.min.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, 'bdb5441d0e6845318058d451324362a0')">청년층 인구수 대비 주택 소유자(Bar3D)</button>
+            <button class="tablinks" onclick="showChart(event, 'e2a86d48485e46469b973b2ecd3361fe')">청년층 인구수 대비 아파트 소유자(Bar3D)</button>
+    </div>
+
+    <div class="box">
+                <div id="bdb5441d0e6845318058d451324362a0" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_bdb5441d0e6845318058d451324362a0 = echarts.init(
+            document.getElementById('bdb5441d0e6845318058d451324362a0'), 'white', {renderer: 'canvas'});
+        var option_bdb5441d0e6845318058d451324362a0 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "elasticOut",
+    "animationDelay": 1000,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar3D",
+            "data": [
+                [
+                    "\uc804\uad6d",
+                    "2012",
+                    8.62888692933087
+                ],
+                [
+                    "\uc804\uad6d",
+                    "2013",
+                    8.403558718439912
+                ],
+                [
+                    "\uc804\uad6d",
+                    "2014",
+                    8.350777265119131
+                ],
+                [
+                    "\uc804\uad6d",
+                    "2015",
+                    8.669908608804835
+                ],
+                [
+                    "\uc804\uad6d",
+                    "2016",
+                    8.601591168450842
+                ],
+                [
+                    "\uc804\uad6d",
+                    "2017",
+                    8.642635478512238
+                ],
+                [
+                    "\uc804\uad6d",
+                    "2018",
+                    8.790841043325893
+                ],
+                [
+                    "\uc804\uad6d",
+                    "2019",
+                    8.696761337675795
+                ],
+                [
+                    "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc",
+                    "2012",
+                    8.218409700089218
+                ],
+                [
+                    "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc",
+                    "2013",
+                    7.810135670949893
+                ],
+                [
+                    "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc",
+                    "2014",
+                    7.616908545029631
+                ],
+                [
+                    "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc",
+                    "2015",
+                    7.8013041133661725
+                ],
+                [
+                    "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc",
+                    "2016",
+                    7.861825400538221
+                ],
+                [
+                    "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc",
+                    "2017",
+                    7.998902781786178
+                ],
+                [
+                    "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc",
+                    "2018",
+                    8.126813827955944
+                ],
+                [
+                    "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc",
+                    "2019",
+                    7.866806796318292
+                ],
+                [
+                    "\ubd80\uc0b0\uad11\uc5ed\uc2dc",
+                    "2012",
+                    8.776356816846672
+                ],
+                [
+                    "\ubd80\uc0b0\uad11\uc5ed\uc2dc",
+                    "2013",
+                    8.708667551948578
+                ],
+                [
+                    "\ubd80\uc0b0\uad11\uc5ed\uc2dc",
+                    "2014",
+                    8.71871884504234
+                ],
+                [
+                    "\ubd80\uc0b0\uad11\uc5ed\uc2dc",
+                    "2015",
+                    9.02291691573563
+                ],
+                [
+                    "\ubd80\uc0b0\uad11\uc5ed\uc2dc",
+                    "2016",
+                    9.120062799211858
+                ],
+                [
+                    "\ubd80\uc0b0\uad11\uc5ed\uc2dc",
+                    "2017",
+                    9.11880209374308
+                ],
+                [
+                    "\ubd80\uc0b0\uad11\uc5ed\uc2dc",
+                    "2018",
+                    8.852926186035466
+                ],
+                [
+                    "\ubd80\uc0b0\uad11\uc5ed\uc2dc",
+                    "2019",
+                    8.427365066319133
+                ],
+                [
+                    "\ub300\uad6c\uad11\uc5ed\uc2dc",
+                    "2012",
+                    8.13697098531871
+                ],
+                [
+                    "\ub300\uad6c\uad11\uc5ed\uc2dc",
+                    "2013",
+                    8.260409575907685
+                ],
+                [
+                    "\ub300\uad6c\uad11\uc5ed\uc2dc",
+                    "2014",
+                    8.252980574838068
+                ],
+                [
+                    "\ub300\uad6c\uad11\uc5ed\uc2dc",
+                    "2015",
+                    8.254894238359684
+                ],
+                [
+                    "\ub300\uad6c\uad11\uc5ed\uc2dc",
+                    "2016",
+                    8.283327532806581
+                ],
+                [
+                    "\ub300\uad6c\uad11\uc5ed\uc2dc",
+                    "2017",
+                    8.546233619950568
+                ],
+                [
+                    "\ub300\uad6c\uad11\uc5ed\uc2dc",
+                    "2018",
+                    8.707966226138032
+                ],
+                [
+                    "\ub300\uad6c\uad11\uc5ed\uc2dc",
+                    "2019",
+                    8.585730808153825
+                ],
+                [
+                    "\uc778\ucc9c\uad11\uc5ed\uc2dc",
+                    "2012",
+                    9.633612037214823
+                ],
+                [
+                    "\uc778\ucc9c\uad11\uc5ed\uc2dc",
+                    "2013",
+                    9.153855252707887
+                ],
+                [
+                    "\uc778\ucc9c\uad11\uc5ed\uc2dc",
+                    "2014",
+                    9.01716245731268
+                ],
+                [
+                    "\uc778\ucc9c\uad11\uc5ed\uc2dc",
+                    "2015",
+                    9.30157497076476
+                ],
+                [
+                    "\uc778\ucc9c\uad11\uc5ed\uc2dc",
+                    "2016",
+                    9.18924701410826
+                ],
+                [
+                    "\uc778\ucc9c\uad11\uc5ed\uc2dc",
+                    "2017",
+                    9.200022513103551
+                ],
+                [
+                    "\uc778\ucc9c\uad11\uc5ed\uc2dc",
+                    "2018",
+                    9.236632315205394
+                ],
+                [
+                    "\uc778\ucc9c\uad11\uc5ed\uc2dc",
+                    "2019",
+                    8.91765928234814
+                ],
+                [
+                    "\uad11\uc8fc\uad11\uc5ed\uc2dc",
+                    "2012",
+                    9.185894861075985
+                ],
+                [
+                    "\uad11\uc8fc\uad11\uc5ed\uc2dc",
+                    "2013",
+                    8.782708427014546
+                ],
+                [
+                    "\uad11\uc8fc\uad11\uc5ed\uc2dc",
+                    "2014",
+                    9.054877066348725
+                ],
+                [
+                    "\uad11\uc8fc\uad11\uc5ed\uc2dc",
+                    "2015",
+                    9.381661425465904
+                ],
+                [
+                    "\uad11\uc8fc\uad11\uc5ed\uc2dc",
+                    "2016",
+                    9.166589072909794
+                ],
+                [
+                    "\uad11\uc8fc\uad11\uc5ed\uc2dc",
+                    "2017",
+                    9.00559398363047
+                ],
+                [
+                    "\uad11\uc8fc\uad11\uc5ed\uc2dc",
+                    "2018",
+                    9.214840916450205
+                ],
+                [
+                    "\uad11\uc8fc\uad11\uc5ed\uc2dc",
+                    "2019",
+                    9.095459379311647
+                ],
+                [
+                    "\ub300\uc804\uad11\uc5ed\uc2dc",
+                    "2012",
+                    8.907574506290231
+                ],
+                [
+                    "\ub300\uc804\uad11\uc5ed\uc2dc",
+                    "2013",
+                    8.526518360007728
+                ],
+                [
+                    "\ub300\uc804\uad11\uc5ed\uc2dc",
+                    "2014",
+                    8.611793129559306
+                ],
+                [
+                    "\ub300\uc804\uad11\uc5ed\uc2dc",
+                    "2015",
+                    8.813526597777834
+                ],
+                [
+                    "\ub300\uc804\uad11\uc5ed\uc2dc",
+                    "2016",
+                    8.539747867260704
+                ],
+                [
+                    "\ub300\uc804\uad11\uc5ed\uc2dc",
+                    "2017",
+                    8.11015972584758
+                ],
+                [
+                    "\ub300\uc804\uad11\uc5ed\uc2dc",
+                    "2018",
+                    8.263832498759417
+                ],
+                [
+                    "\ub300\uc804\uad11\uc5ed\uc2dc",
+                    "2019",
+                    7.996382387478393
+                ],
+                [
+                    "\uc6b8\uc0b0\uad11\uc5ed\uc2dc",
+                    "2012",
+                    10.382806463259042
+                ],
+                [
+                    "\uc6b8\uc0b0\uad11\uc5ed\uc2dc",
+                    "2013",
+                    10.262654748027778
+                ],
+                [
+                    "\uc6b8\uc0b0\uad11\uc5ed\uc2dc",
+                    "2014",
+                    10.393668506519479
+                ],
+                [
+                    "\uc6b8\uc0b0\uad11\uc5ed\uc2dc",
+                    "2015",
+                    10.967267241480913
+                ],
+                [
+                    "\uc6b8\uc0b0\uad11\uc5ed\uc2dc",
+                    "2016",
+                    10.961517347386913
+                ],
+                [
+                    "\uc6b8\uc0b0\uad11\uc5ed\uc2dc",
+                    "2017",
+                    11.04267915525316
+                ],
+                [
+                    "\uc6b8\uc0b0\uad11\uc5ed\uc2dc",
+                    "2018",
+                    11.141625168562289
+                ],
+                [
+                    "\uc6b8\uc0b0\uad11\uc5ed\uc2dc",
+                    "2019",
+                    10.868249085247031
+                ],
+                [
+                    "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc",
+                    "2012",
+                    8.890963606657449
+                ],
+                [
+                    "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc",
+                    "2013",
+                    8.323090721854964
+                ],
+                [
+                    "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc",
+                    "2014",
+                    7.56453725350992
+                ],
+                [
+                    "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc",
+                    "2015",
+                    10.321691572283708
+                ],
+                [
+                    "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc",
+                    "2016",
+                    10.340488582129002
+                ],
+                [
+                    "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc",
+                    "2017",
+                    10.621751609650143
+                ],
+                [
+                    "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc",
+                    "2018",
+                    11.110085550946945
+                ],
+                [
+                    "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc",
+                    "2019",
+                    10.229098482594466
+                ],
+                [
+                    "\uacbd\uae30\ub3c4",
+                    "2012",
+                    8.783513254096915
+                ],
+                [
+                    "\uacbd\uae30\ub3c4",
+                    "2013",
+                    8.504618848615559
+                ],
+                [
+                    "\uacbd\uae30\ub3c4",
+                    "2014",
+                    8.347893133089975
+                ],
+                [
+                    "\uacbd\uae30\ub3c4",
+                    "2015",
+                    8.539532092271065
+                ],
+                [
+                    "\uacbd\uae30\ub3c4",
+                    "2016",
+                    8.367005695016575
+                ],
+                [
+                    "\uacbd\uae30\ub3c4",
+                    "2017",
+                    8.39883904991297
+                ],
+                [
+                    "\uacbd\uae30\ub3c4",
+                    "2018",
+                    8.636346735006759
+                ],
+                [
+                    "\uacbd\uae30\ub3c4",
+                    "2019",
+                    8.756857736505765
+                ],
+                [
+                    "\uac15\uc6d0\ub3c4",
+                    "2012",
+                    7.411837054944123
+                ],
+                [
+                    "\uac15\uc6d0\ub3c4",
+                    "2013",
+                    7.30039253773623
+                ],
+                [
+                    "\uac15\uc6d0\ub3c4",
+                    "2014",
+                    7.185596893864851
+                ],
+                [
+                    "\uac15\uc6d0\ub3c4",
+                    "2015",
+                    7.709701539598029
+                ],
+                [
+                    "\uac15\uc6d0\ub3c4",
+                    "2016",
+                    7.597352723392708
+                ],
+                [
+                    "\uac15\uc6d0\ub3c4",
+                    "2017",
+                    7.516119311154501
+                ],
+                [
+                    "\uac15\uc6d0\ub3c4",
+                    "2018",
+                    7.671605748451116
+                ],
+                [
+                    "\uac15\uc6d0\ub3c4",
+                    "2019",
+                    7.983871636813154
+                ],
+                [
+                    "\ucda9\uccad\ubd81\ub3c4",
+                    "2012",
+                    8.953256418930742
+                ],
+                [
+                    "\ucda9\uccad\ubd81\ub3c4",
+                    "2013",
+                    8.940160424136492
+                ],
+                [
+                    "\ucda9\uccad\ubd81\ub3c4",
+                    "2014",
+                    8.836465306341909
+                ],
+                [
+                    "\ucda9\uccad\ubd81\ub3c4",
+                    "2015",
+                    9.121306907431944
+                ],
+                [
+                    "\ucda9\uccad\ubd81\ub3c4",
+                    "2016",
+                    8.80604089914925
+                ],
+                [
+                    "\ucda9\uccad\ubd81\ub3c4",
+                    "2017",
+                    8.70862854108049
+                ],
+                [
+                    "\ucda9\uccad\ubd81\ub3c4",
+                    "2018",
+                    8.873768089761345
+                ],
+                [
+                    "\ucda9\uccad\ubd81\ub3c4",
+                    "2019",
+                    9.07618502706747
+                ],
+                [
+                    "\ucda9\uccad\ub0a8\ub3c4",
+                    "2012",
+                    8.625550403989743
+                ],
+                [
+                    "\ucda9\uccad\ub0a8\ub3c4",
+                    "2013",
+                    8.489820192767318
+                ],
+                [
+                    "\ucda9\uccad\ub0a8\ub3c4",
+                    "2014",
+                    9.108618726856514
+                ],
+                [
+                    "\ucda9\uccad\ub0a8\ub3c4",
+                    "2015",
+                    9.475442852090875
+                ],
+                [
+                    "\ucda9\uccad\ub0a8\ub3c4",
+                    "2016",
+                    9.797057299501889
+                ],
+                [
+                    "\ucda9\uccad\ub0a8\ub3c4",
+                    "2017",
+                    9.891848533207574
+                ],
+                [
+                    "\ucda9\uccad\ub0a8\ub3c4",
+                    "2018",
+                    10.174144620623036
+                ],
+                [
+                    "\ucda9\uccad\ub0a8\ub3c4",
+                    "2019",
+                    10.205820243887999
+                ],
+                [
+                    "\uc804\ub77c\ubd81\ub3c4",
+                    "2012",
+                    8.181204431890283
+                ],
+                [
+                    "\uc804\ub77c\ubd81\ub3c4",
+                    "2013",
+                    8.059556207066375
+                ],
+                [
+                    "\uc804\ub77c\ubd81\ub3c4",
+                    "2014",
+                    7.851592828567195
+                ],
+                [
+                    "\uc804\ub77c\ubd81\ub3c4",
+                    "2015",
+                    8.455765724096679
+                ],
+                [
+                    "\uc804\ub77c\ubd81\ub3c4",
+                    "2016",
+                    8.066778170104689
+                ],
+                [
+                    "\uc804\ub77c\ubd81\ub3c4",
+                    "2017",
+                    7.955251312780365
+                ],
+                [
+                    "\uc804\ub77c\ubd81\ub3c4",
+                    "2018",
+                    8.109103339593778
+                ],
+                [
+                    "\uc804\ub77c\ubd81\ub3c4",
+                    "2019",
+                    8.033730060743741
+                ],
+                [
+                    "\uc804\ub77c\ub0a8\ub3c4",
+                    "2012",
+                    7.348756620434729
+                ],
+                [
+                    "\uc804\ub77c\ub0a8\ub3c4",
+                    "2013",
+                    7.3212206481661175
+                ],
+                [
+                    "\uc804\ub77c\ub0a8\ub3c4",
+                    "2014",
+                    7.228815669350154
+                ],
+                [
+                    "\uc804\ub77c\ub0a8\ub3c4",
+                    "2015",
+                    8.030014615550746
+                ],
+                [
+                    "\uc804\ub77c\ub0a8\ub3c4",
+                    "2016",
+                    7.846663135253549
+                ],
+                [
+                    "\uc804\ub77c\ub0a8\ub3c4",
+                    "2017",
+                    7.760236257777871
+                ],
+                [
+                    "\uc804\ub77c\ub0a8\ub3c4",
+                    "2018",
+                    8.138586219981569
+                ],
+                [
+                    "\uc804\ub77c\ub0a8\ub3c4",
+                    "2019",
+                    8.159607954856428
+                ],
+                [
+                    "\uacbd\uc0c1\ubd81\ub3c4",
+                    "2012",
+                    8.341715461179005
+                ],
+                [
+                    "\uacbd\uc0c1\ubd81\ub3c4",
+                    "2013",
+                    8.284959634697746
+                ],
+                [
+                    "\uacbd\uc0c1\ubd81\ub3c4",
+                    "2014",
+                    8.108215892130302
+                ],
+                [
+                    "\uacbd\uc0c1\ubd81\ub3c4",
+                    "2015",
+                    8.871653861566438
+                ],
+                [
+                    "\uacbd\uc0c1\ubd81\ub3c4",
+                    "2016",
+                    8.973125288549813
+                ],
+                [
+                    "\uacbd\uc0c1\ubd81\ub3c4",
+                    "2017",
+                    9.153903056541566
+                ],
+                [
+                    "\uacbd\uc0c1\ubd81\ub3c4",
+                    "2018",
+                    9.372414619263497
+                ],
+                [
+                    "\uacbd\uc0c1\ubd81\ub3c4",
+                    "2019",
+                    9.29051145169623
+                ],
+                [
+                    "\uacbd\uc0c1\ub0a8\ub3c4",
+                    "2012",
+                    9.345924639999517
+                ],
+                [
+                    "\uacbd\uc0c1\ub0a8\ub3c4",
+                    "2013",
+                    9.283030054130165
+                ],
+                [
+                    "\uacbd\uc0c1\ub0a8\ub3c4",
+                    "2014",
+                    9.563642938579529
+                ],
+                [
+                    "\uacbd\uc0c1\ub0a8\ub3c4",
+                    "2015",
+                    10.018068200286159
+                ],
+                [
+                    "\uacbd\uc0c1\ub0a8\ub3c4",
+                    "2016",
+                    9.840596627756161
+                ],
+                [
+                    "\uacbd\uc0c1\ub0a8\ub3c4",
+                    "2017",
+                    9.899813390860123
+                ],
+                [
+                    "\uacbd\uc0c1\ub0a8\ub3c4",
+                    "2018",
+                    9.883515779587915
+                ],
+                [
+                    "\uacbd\uc0c1\ub0a8\ub3c4",
+                    "2019",
+                    9.749039082007688
+                ],
+                [
+                    "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4",
+                    "2012",
+                    6.974234727637352
+                ],
+                [
+                    "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4",
+                    "2013",
+                    7.057507759145253
+                ],
+                [
+                    "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4",
+                    "2014",
+                    7.292571254793965
+                ],
+                [
+                    "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4",
+                    "2015",
+                    7.7380693617263185
+                ],
+                [
+                    "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4",
+                    "2016",
+                    7.868179655281801
+                ],
+                [
+                    "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4",
+                    "2017",
+                    8.026781061869759
+                ],
+                [
+                    "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4",
+                    "2018",
+                    8.260008367544387
+                ],
+                [
+                    "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4",
+                    "2019",
+                    8.056775825346113
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 6.974234727637352,
+        "max": 11.141625168562289,
+        "inRange": {
+            "color": [
+                "#313695",
+                "#4575b4",
+                "#74add1",
+                "#abd9e9",
+                "#e0f3f8",
+                "#ffffbf",
+                "#fee090",
+                "#fdae61",
+                "#f46d43",
+                "#d73027",
+                "#a50026"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
+    "xAxis3D": {
+        "data": [
+            "\uc804\uad6d",
+            "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc",
+            "\ubd80\uc0b0\uad11\uc5ed\uc2dc",
+            "\ub300\uad6c\uad11\uc5ed\uc2dc",
+            "\uc778\ucc9c\uad11\uc5ed\uc2dc",
+            "\uad11\uc8fc\uad11\uc5ed\uc2dc",
+            "\ub300\uc804\uad11\uc5ed\uc2dc",
+            "\uc6b8\uc0b0\uad11\uc5ed\uc2dc",
+            "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc",
+            "\uacbd\uae30\ub3c4",
+            "\uac15\uc6d0\ub3c4",
+            "\ucda9\uccad\ubd81\ub3c4",
+            "\ucda9\uccad\ub0a8\ub3c4",
+            "\uc804\ub77c\ubd81\ub3c4",
+            "\uc804\ub77c\ub0a8\ub3c4",
+            "\uacbd\uc0c1\ubd81\ub3c4",
+            "\uacbd\uc0c1\ub0a8\ub3c4",
+            "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4"
+        ],
+        "name": "\uc9c0\uc5ed",
+        "nameGap": 20,
+        "type": "category",
+        "axisLabel": {
+            "margin": 8
+        }
+    },
+    "yAxis3D": {
+        "data": [
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019"
+        ],
+        "name": "\uc5f0\ub3c4",
+        "nameGap": 20,
+        "type": "category",
+        "axisLabel": {
+            "margin": 8
+        }
+    },
+    "zAxis3D": {
+        "name": "\uc778\uad6c\uc218 \ub300\ube44 \uc8fc\ud0dd \uc18c\uc720\uc790(%)",
+        "nameGap": 20,
+        "type": "value",
+        "axisLabel": {
+            "margin": 8
+        }
+    },
+    "grid3D": {
+        "boxWidth": 200,
+        "boxHeight": 100,
+        "boxDepth": 80,
+        "viewControl": {
+            "autoRotate": false,
+            "autoRotateSpeed": 10,
+            "rotateSensitivity": 1
+        }
+    },
+    "title": [
+        {
+            "text": "\uccad\ub144\uce35 \uc778\uad6c\uc218 \ub300\ube44 \uc8fc\ud0dd \uc18c\uc720\uc790 \ube44\uc728",
+            "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \ub9c9\ub300\uc5d0 \uc62c\ub824 \uc2dc\uac04\uc758 \ud750\ub984\uc5d0 \ub530\ub978 \uac70\uc8fc\uc9c0\uc5ed\ubcc4 \uc18c\uc720\uc790 \ube44\uc728\uc744 \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_bdb5441d0e6845318058d451324362a0.setOption(option_bdb5441d0e6845318058d451324362a0);
+    </script>
+                <div id="e2a86d48485e46469b973b2ecd3361fe" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_e2a86d48485e46469b973b2ecd3361fe = echarts.init(
+            document.getElementById('e2a86d48485e46469b973b2ecd3361fe'), 'white', {renderer: 'canvas'});
+        var option_e2a86d48485e46469b973b2ecd3361fe = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "elasticOut",
+    "animationDelay": 1000,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar3D",
+            "data": [
+                [
+                    "\uc804\uad6d",
+                    "2012",
+                    64611.90512167583
+                ],
+                [
+                    "\uc804\uad6d",
+                    "2013",
+                    62656.718944625434
+                ],
+                [
+                    "\uc804\uad6d",
+                    "2014",
+                    62856.0055501772
+                ],
+                [
+                    "\uc804\uad6d",
+                    "2015",
+                    64643.13817395005
+                ],
+                [
+                    "\uc804\uad6d",
+                    "2016",
+                    64589.70984742844
+                ],
+                [
+                    "\uc804\uad6d",
+                    "2017",
+                    65222.27876754492
+                ],
+                [
+                    "\uc804\uad6d",
+                    "2018",
+                    67193.20690930895
+                ],
+                [
+                    "\uc804\uad6d",
+                    "2019",
+                    67379.07326890368
+                ],
+                [
+                    "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc",
+                    "2012",
+                    52619.01873059701
+                ],
+                [
+                    "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc",
+                    "2013",
+                    49430.632015249896
+                ],
+                [
+                    "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc",
+                    "2014",
+                    48296.526280392485
+                ],
+                [
+                    "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc",
+                    "2015",
+                    49368.26855368419
+                ],
+                [
+                    "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc",
+                    "2016",
+                    49736.446093959865
+                ],
+                [
+                    "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc",
+                    "2017",
+                    51049.680758033915
+                ],
+                [
+                    "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc",
+                    "2018",
+                    52968.70888370286
+                ],
+                [
+                    "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc",
+                    "2019",
+                    52172.334114129
+                ],
+                [
+                    "\ubd80\uc0b0\uad11\uc5ed\uc2dc",
+                    "2012",
+                    69901.63736876195
+                ],
+                [
+                    "\ubd80\uc0b0\uad11\uc5ed\uc2dc",
+                    "2013",
+                    69116.81091082173
+                ],
+                [
+                    "\ubd80\uc0b0\uad11\uc5ed\uc2dc",
+                    "2014",
+                    70185.8886182658
+                ],
+                [
+                    "\ubd80\uc0b0\uad11\uc5ed\uc2dc",
+                    "2015",
+                    72372.04925587834
+                ],
+                [
+                    "\ubd80\uc0b0\uad11\uc5ed\uc2dc",
+                    "2016",
+                    73807.45163056106
+                ],
+                [
+                    "\ubd80\uc0b0\uad11\uc5ed\uc2dc",
+                    "2017",
+                    73936.65292805324
+                ],
+                [
+                    "\ubd80\uc0b0\uad11\uc5ed\uc2dc",
+                    "2018",
+                    71951.63783370159
+                ],
+                [
+                    "\ubd80\uc0b0\uad11\uc5ed\uc2dc",
+                    "2019",
+                    68741.7110063467
+                ],
+                [
+                    "\ub300\uad6c\uad11\uc5ed\uc2dc",
+                    "2012",
+                    67149.08502863559
+                ],
+                [
+                    "\ub300\uad6c\uad11\uc5ed\uc2dc",
+                    "2013",
+                    68495.29652016304
+                ],
+                [
+                    "\ub300\uad6c\uad11\uc5ed\uc2dc",
+                    "2014",
+                    68872.71130300612
+                ],
+                [
+                    "\ub300\uad6c\uad11\uc5ed\uc2dc",
+                    "2015",
+                    68195.14695183928
+                ],
+                [
+                    "\ub300\uad6c\uad11\uc5ed\uc2dc",
+                    "2016",
+                    68964.6103580167
+                ],
+                [
+                    "\ub300\uad6c\uad11\uc5ed\uc2dc",
+                    "2017",
+                    71676.72876108893
+                ],
+                [
+                    "\ub300\uad6c\uad11\uc5ed\uc2dc",
+                    "2018",
+                    73671.07195301028
+                ],
+                [
+                    "\ub300\uad6c\uad11\uc5ed\uc2dc",
+                    "2019",
+                    72978.09363657808
+                ],
+                [
+                    "\uc778\ucc9c\uad11\uc5ed\uc2dc",
+                    "2012",
+                    61849.03263749115
+                ],
+                [
+                    "\uc778\ucc9c\uad11\uc5ed\uc2dc",
+                    "2013",
+                    58169.958938136835
+                ],
+                [
+                    "\uc778\ucc9c\uad11\uc5ed\uc2dc",
+                    "2014",
+                    58668.141889443075
+                ],
+                [
+                    "\uc778\ucc9c\uad11\uc5ed\uc2dc",
+                    "2015",
+                    61893.69707592316
+                ],
+                [
+                    "\uc778\ucc9c\uad11\uc5ed\uc2dc",
+                    "2016",
+                    62160.805355237564
+                ],
+                [
+                    "\uc778\ucc9c\uad11\uc5ed\uc2dc",
+                    "2017",
+                    63040.25214675979
+                ],
+                [
+                    "\uc778\ucc9c\uad11\uc5ed\uc2dc",
+                    "2018",
+                    64877.665946109686
+                ],
+                [
+                    "\uc778\ucc9c\uad11\uc5ed\uc2dc",
+                    "2019",
+                    64202.01120635275
+                ],
+                [
+                    "\uad11\uc8fc\uad11\uc5ed\uc2dc",
+                    "2012",
+                    80219.13447090851
+                ],
+                [
+                    "\uad11\uc8fc\uad11\uc5ed\uc2dc",
+                    "2013",
+                    76366.81941967331
+                ],
+                [
+                    "\uad11\uc8fc\uad11\uc5ed\uc2dc",
+                    "2014",
+                    79029.42029452517
+                ],
+                [
+                    "\uad11\uc8fc\uad11\uc5ed\uc2dc",
+                    "2015",
+                    81712.60631898863
+                ],
+                [
+                    "\uad11\uc8fc\uad11\uc5ed\uc2dc",
+                    "2016",
+                    79762.33369633717
+                ],
+                [
+                    "\uad11\uc8fc\uad11\uc5ed\uc2dc",
+                    "2017",
+                    78061.12139857895
+                ],
+                [
+                    "\uad11\uc8fc\uad11\uc5ed\uc2dc",
+                    "2018",
+                    80255.14453335445
+                ],
+                [
+                    "\uad11\uc8fc\uad11\uc5ed\uc2dc",
+                    "2019",
+                    79327.7496238758
+                ],
+                [
+                    "\ub300\uc804\uad11\uc5ed\uc2dc",
+                    "2012",
+                    73369.9862033295
+                ],
+                [
+                    "\ub300\uc804\uad11\uc5ed\uc2dc",
+                    "2013",
+                    70046.90928724632
+                ],
+                [
+                    "\ub300\uc804\uad11\uc5ed\uc2dc",
+                    "2014",
+                    71279.9674825985
+                ],
+                [
+                    "\ub300\uc804\uad11\uc5ed\uc2dc",
+                    "2015",
+                    73354.73661827229
+                ],
+                [
+                    "\ub300\uc804\uad11\uc5ed\uc2dc",
+                    "2016",
+                    71356.36225600864
+                ],
+                [
+                    "\ub300\uc804\uad11\uc5ed\uc2dc",
+                    "2017",
+                    67546.07002067653
+                ],
+                [
+                    "\ub300\uc804\uad11\uc5ed\uc2dc",
+                    "2018",
+                    69582.6002616502
+                ],
+                [
+                    "\ub300\uc804\uad11\uc5ed\uc2dc",
+                    "2019",
+                    67426.17080090732
+                ],
+                [
+                    "\uc6b8\uc0b0\uad11\uc5ed\uc2dc",
+                    "2012",
+                    87883.92140974978
+                ],
+                [
+                    "\uc6b8\uc0b0\uad11\uc5ed\uc2dc",
+                    "2013",
+                    86870.23455326569
+                ],
+                [
+                    "\uc6b8\uc0b0\uad11\uc5ed\uc2dc",
+                    "2014",
+                    89566.16803989015
+                ],
+                [
+                    "\uc6b8\uc0b0\uad11\uc5ed\uc2dc",
+                    "2015",
+                    95164.25308663801
+                ],
+                [
+                    "\uc6b8\uc0b0\uad11\uc5ed\uc2dc",
+                    "2016",
+                    95806.91425120772
+                ],
+                [
+                    "\uc6b8\uc0b0\uad11\uc5ed\uc2dc",
+                    "2017",
+                    96845.45374215781
+                ],
+                [
+                    "\uc6b8\uc0b0\uad11\uc5ed\uc2dc",
+                    "2018",
+                    98433.07780598047
+                ],
+                [
+                    "\uc6b8\uc0b0\uad11\uc5ed\uc2dc",
+                    "2019",
+                    96464.342607623
+                ],
+                [
+                    "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc",
+                    "2012",
+                    74312.79961218737
+                ],
+                [
+                    "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc",
+                    "2013",
+                    69046.27445769524
+                ],
+                [
+                    "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc",
+                    "2014",
+                    62964.36833665863
+                ],
+                [
+                    "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc",
+                    "2015",
+                    91778.99315274967
+                ],
+                [
+                    "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc",
+                    "2016",
+                    92735.30046833002
+                ],
+                [
+                    "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc",
+                    "2017",
+                    96443.25498409744
+                ],
+                [
+                    "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc",
+                    "2018",
+                    101882.35158381745
+                ],
+                [
+                    "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc",
+                    "2019",
+                    93283.92523870061
+                ],
+                [
+                    "\uacbd\uae30\ub3c4",
+                    "2012",
+                    66220.1087161963
+                ],
+                [
+                    "\uacbd\uae30\ub3c4",
+                    "2013",
+                    63696.63956159216
+                ],
+                [
+                    "\uacbd\uae30\ub3c4",
+                    "2014",
+                    62639.54070633513
+                ],
+                [
+                    "\uacbd\uae30\ub3c4",
+                    "2015",
+                    63331.46415877569
+                ],
+                [
+                    "\uacbd\uae30\ub3c4",
+                    "2016",
+                    61957.25121886549
+                ],
+                [
+                    "\uacbd\uae30\ub3c4",
+                    "2017",
+                    62208.52768810422
+                ],
+                [
+                    "\uacbd\uae30\ub3c4",
+                    "2018",
+                    65104.37487343024
+                ],
+                [
+                    "\uacbd\uae30\ub3c4",
+                    "2019",
+                    67352.98777683744
+                ],
+                [
+                    "\uac15\uc6d0\ub3c4",
+                    "2012",
+                    56506.2804391006
+                ],
+                [
+                    "\uac15\uc6d0\ub3c4",
+                    "2013",
+                    55325.27445845401
+                ],
+                [
+                    "\uac15\uc6d0\ub3c4",
+                    "2014",
+                    55002.999169687995
+                ],
+                [
+                    "\uac15\uc6d0\ub3c4",
+                    "2015",
+                    57546.49273743352
+                ],
+                [
+                    "\uac15\uc6d0\ub3c4",
+                    "2016",
+                    57696.46462555937
+                ],
+                [
+                    "\uac15\uc6d0\ub3c4",
+                    "2017",
+                    57169.405013780684
+                ],
+                [
+                    "\uac15\uc6d0\ub3c4",
+                    "2018",
+                    58708.10172127027
+                ],
+                [
+                    "\uac15\uc6d0\ub3c4",
+                    "2019",
+                    62396.19025495092
+                ],
+                [
+                    "\ucda9\uccad\ubd81\ub3c4",
+                    "2012",
+                    72602.06323468225
+                ],
+                [
+                    "\ucda9\uccad\ubd81\ub3c4",
+                    "2013",
+                    72318.91557930646
+                ],
+                [
+                    "\ucda9\uccad\ubd81\ub3c4",
+                    "2014",
+                    71630.77667553836
+                ],
+                [
+                    "\ucda9\uccad\ubd81\ub3c4",
+                    "2015",
+                    72531.45019191105
+                ],
+                [
+                    "\ucda9\uccad\ubd81\ub3c4",
+                    "2016",
+                    70651.79727283563
+                ],
+                [
+                    "\ucda9\uccad\ubd81\ub3c4",
+                    "2017",
+                    70102.65884719256
+                ],
+                [
+                    "\ucda9\uccad\ubd81\ub3c4",
+                    "2018",
+                    72046.49789102128
+                ],
+                [
+                    "\ucda9\uccad\ubd81\ub3c4",
+                    "2019",
+                    74898.40529319426
+                ],
+                [
+                    "\ucda9\uccad\ub0a8\ub3c4",
+                    "2012",
+                    69111.94621644684
+                ],
+                [
+                    "\ucda9\uccad\ub0a8\ub3c4",
+                    "2013",
+                    67774.04187213867
+                ],
+                [
+                    "\ucda9\uccad\ub0a8\ub3c4",
+                    "2014",
+                    74219.44032319712
+                ],
+                [
+                    "\ucda9\uccad\ub0a8\ub3c4",
+                    "2015",
+                    75406.96968974169
+                ],
+                [
+                    "\ucda9\uccad\ub0a8\ub3c4",
+                    "2016",
+                    80319.38454852405
+                ],
+                [
+                    "\ucda9\uccad\ub0a8\ub3c4",
+                    "2017",
+                    82057.84640260052
+                ],
+                [
+                    "\ucda9\uccad\ub0a8\ub3c4",
+                    "2018",
+                    85206.51321161534
+                ],
+                [
+                    "\ucda9\uccad\ub0a8\ub3c4",
+                    "2019",
+                    86247.80441594723
+                ],
+                [
+                    "\uc804\ub77c\ubd81\ub3c4",
+                    "2012",
+                    67086.86983636688
+                ],
+                [
+                    "\uc804\ub77c\ubd81\ub3c4",
+                    "2013",
+                    65826.7417959348
+                ],
+                [
+                    "\uc804\ub77c\ubd81\ub3c4",
+                    "2014",
+                    64182.54556230553
+                ],
+                [
+                    "\uc804\ub77c\ubd81\ub3c4",
+                    "2015",
+                    67600.35742912562
+                ],
+                [
+                    "\uc804\ub77c\ubd81\ub3c4",
+                    "2016",
+                    65113.0520968841
+                ],
+                [
+                    "\uc804\ub77c\ubd81\ub3c4",
+                    "2017",
+                    64578.46262163227
+                ],
+                [
+                    "\uc804\ub77c\ubd81\ub3c4",
+                    "2018",
+                    66167.59077536702
+                ],
+                [
+                    "\uc804\ub77c\ubd81\ub3c4",
+                    "2019",
+                    65925.06625841605
+                ],
+                [
+                    "\uc804\ub77c\ub0a8\ub3c4",
+                    "2012",
+                    54672.43588148222
+                ],
+                [
+                    "\uc804\ub77c\ub0a8\ub3c4",
+                    "2013",
+                    54222.0551135261
+                ],
+                [
+                    "\uc804\ub77c\ub0a8\ub3c4",
+                    "2014",
+                    54775.09126291524
+                ],
+                [
+                    "\uc804\ub77c\ub0a8\ub3c4",
+                    "2015",
+                    57425.05135532864
+                ],
+                [
+                    "\uc804\ub77c\ub0a8\ub3c4",
+                    "2016",
+                    57901.49409557133
+                ],
+                [
+                    "\uc804\ub77c\ub0a8\ub3c4",
+                    "2017",
+                    57916.84652720018
+                ],
+                [
+                    "\uc804\ub77c\ub0a8\ub3c4",
+                    "2018",
+                    61314.84794275492
+                ],
+                [
+                    "\uc804\ub77c\ub0a8\ub3c4",
+                    "2019",
+                    62680.06977550307
+                ],
+                [
+                    "\uacbd\uc0c1\ubd81\ub3c4",
+                    "2012",
+                    64452.489127529814
+                ],
+                [
+                    "\uacbd\uc0c1\ubd81\ub3c4",
+                    "2013",
+                    63614.522555325086
+                ],
+                [
+                    "\uacbd\uc0c1\ubd81\ub3c4",
+                    "2014",
+                    62685.55908065367
+                ],
+                [
+                    "\uacbd\uc0c1\ubd81\ub3c4",
+                    "2015",
+                    66722.404987368
+                ],
+                [
+                    "\uacbd\uc0c1\ubd81\ub3c4",
+                    "2016",
+                    69150.24401806388
+                ],
+                [
+                    "\uacbd\uc0c1\ubd81\ub3c4",
+                    "2017",
+                    71886.9786640058
+                ],
+                [
+                    "\uacbd\uc0c1\ubd81\ub3c4",
+                    "2018",
+                    74673.28274566031
+                ],
+                [
+                    "\uacbd\uc0c1\ubd81\ub3c4",
+                    "2019",
+                    74895.08013381757
+                ],
+                [
+                    "\uacbd\uc0c1\ub0a8\ub3c4",
+                    "2012",
+                    76736.07639614747
+                ],
+                [
+                    "\uacbd\uc0c1\ub0a8\ub3c4",
+                    "2013",
+                    76018.14425858964
+                ],
+                [
+                    "\uacbd\uc0c1\ub0a8\ub3c4",
+                    "2014",
+                    79762.73587037864
+                ],
+                [
+                    "\uacbd\uc0c1\ub0a8\ub3c4",
+                    "2015",
+                    81807.2024243892
+                ],
+                [
+                    "\uacbd\uc0c1\ub0a8\ub3c4",
+                    "2016",
+                    81627.10765239949
+                ],
+                [
+                    "\uacbd\uc0c1\ub0a8\ub3c4",
+                    "2017",
+                    83004.01011130374
+                ],
+                [
+                    "\uacbd\uc0c1\ub0a8\ub3c4",
+                    "2018",
+                    83449.14350237093
+                ],
+                [
+                    "\uacbd\uc0c1\ub0a8\ub3c4",
+                    "2019",
+                    82978.4249361726
+                ],
+                [
+                    "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4",
+                    "2012",
+                    35181.65993098042
+                ],
+                [
+                    "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4",
+                    "2013",
+                    35472.80644799418
+                ],
+                [
+                    "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4",
+                    "2014",
+                    37098.10944601193
+                ],
+                [
+                    "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4",
+                    "2015",
+                    37419.61804568604
+                ],
+                [
+                    "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4",
+                    "2016",
+                    35962.118007824894
+                ],
+                [
+                    "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4",
+                    "2017",
+                    36029.245496344316
+                ],
+                [
+                    "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4",
+                    "2018",
+                    36555.70954161546
+                ],
+                [
+                    "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4",
+                    "2019",
+                    35639.643237486685
+                ]
+            ],
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 35181.65993098042,
+        "max": 101882.35158381745,
+        "inRange": {
+            "color": [
+                "#313695",
+                "#4575b4",
+                "#74add1",
+                "#abd9e9",
+                "#e0f3f8",
+                "#ffffbf",
+                "#fee090",
+                "#fdae61",
+                "#f46d43",
+                "#d73027",
+                "#a50026"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    },
+    "xAxis3D": {
+        "data": [
+            "\uc804\uad6d",
+            "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc",
+            "\ubd80\uc0b0\uad11\uc5ed\uc2dc",
+            "\ub300\uad6c\uad11\uc5ed\uc2dc",
+            "\uc778\ucc9c\uad11\uc5ed\uc2dc",
+            "\uad11\uc8fc\uad11\uc5ed\uc2dc",
+            "\ub300\uc804\uad11\uc5ed\uc2dc",
+            "\uc6b8\uc0b0\uad11\uc5ed\uc2dc",
+            "\uc138\uc885\ud2b9\ubcc4\uc790\uce58\uc2dc",
+            "\uacbd\uae30\ub3c4",
+            "\uac15\uc6d0\ub3c4",
+            "\ucda9\uccad\ubd81\ub3c4",
+            "\ucda9\uccad\ub0a8\ub3c4",
+            "\uc804\ub77c\ubd81\ub3c4",
+            "\uc804\ub77c\ub0a8\ub3c4",
+            "\uacbd\uc0c1\ubd81\ub3c4",
+            "\uacbd\uc0c1\ub0a8\ub3c4",
+            "\uc81c\uc8fc\ud2b9\ubcc4\uc790\uce58\ub3c4"
+        ],
+        "name": "\uc9c0\uc5ed",
+        "nameGap": 20,
+        "type": "category",
+        "axisLabel": {
+            "margin": 8
+        }
+    },
+    "yAxis3D": {
+        "data": [
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019"
+        ],
+        "name": "\uc5f0\ub3c4",
+        "nameGap": 20,
+        "type": "category",
+        "axisLabel": {
+            "margin": 8
+        }
+    },
+    "zAxis3D": {
+        "name": "\uc778\uad6c\uc218 \ub300\ube44 \uc544\ud30c\ud2b8 \uc18c\uc720\uc790(%)",
+        "nameGap": 20,
+        "type": "value",
+        "axisLabel": {
+            "margin": 8
+        }
+    },
+    "grid3D": {
+        "boxWidth": 200,
+        "boxHeight": 100,
+        "boxDepth": 80,
+        "viewControl": {
+            "autoRotate": false,
+            "autoRotateSpeed": 10,
+            "rotateSensitivity": 1
+        }
+    },
+    "title": [
+        {
+            "text": "\uccad\ub144\uce35 \uc778\uad6c\uc218 \ub300\ube44 \uc544\ud30c\ud2b8 \uc18c\uc720\uc790 \ube44\uc728",
+            "subtext": "\ub9c8\uc6b0\uc2a4\ub97c \ub9c9\ub300\uc5d0 \uc62c\ub824 \uc2dc\uac04\uc758 \ud750\ub984\uc5d0 \ub530\ub978 \uac70\uc8fc\uc9c0\uc5ed\ubcc4 \uc18c\uc720\uc790 \ube44\uc728\uc744 \ud655\uc778\ud574\ubcf4\uc138\uc694!",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_e2a86d48485e46469b973b2ecd3361fe.setOption(option_e2a86d48485e46469b973b2ecd3361fe);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

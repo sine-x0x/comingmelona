@@ -1,6 +1,6 @@
 # 데이콘 한국 부동산 데이터 시각화 경진대회
 ## 올때메로나 팀 (comingmelona)
-
+팀 구성원 : @yoojin730, @SEONGHYUN-1211
 목적 : local html을 외부로 띄우고 싶을 때 경유 목적의 github.io입니다.
 
 당시 상황 : 반응형 그래프(Pyecharts, plotly.write_html)등 로컬에 html을 저장해 Jupyternotebook, colab에 구현
@@ -8,5 +8,8 @@
 
 해결 방안 : THIS REPOSITORY !
 
-# 구현된 것을 보고 싶으시다면? https://dacon.io/competitions/official/235724/codeshare/2737
-# 재미있게 보셨다면 하트와 댓글 꾸욱 부탁드립니다 🔥🔥🔥🔥
+응용 방안 : 앞으로의 local html files를 특정 사이트에 못 올리는 상태가 발생했을 때 우회하여 적용할 수 있을 것같습니다! 
+
+## 구현된 것을 보고 싶으시다면? 
+https://dacon.io/competitions/official/235724/codeshare/2737
+-> 재미있게 보셨다면 하트와 댓글 꾸욱 부탁드립니다 🔥🔥🔥🔥
